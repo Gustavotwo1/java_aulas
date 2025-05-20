@@ -1,0 +1,110 @@
+introdução java
+todo poprgrama em java deve ter é um cabeçalho e pode ser composto de pacotes
+
+package primeiroPrograma;
+public class <nome da classe>{
+
+}
+
+dentro desse bloco da classe vamos criar um metodo principal "main"
+
+package primeiroPrograma;
+public class <nome da classe>{
+
+    public static void main(string[], args){
+
+    }
+
+}
+
+agora com esse metodo que estar em uma classe que faz parte de um pacote pode receber seu primeiro comando 
+comando print
+    System.out.print("hello, world!");
+ex:
+
+public class <nome da classe>{
+
+    public static void main(string[], args){
+
+        System.out.print("hello, world!");
+
+    }
+
+}
+
+é possivel atalhos em letras minusculas como 
+sout {System.out.println()}
+psvm (public static void main(string[], args){})
+
+java é uma linguagem que vem com basico 
+para usar alguns metodos e preciso usar pacotes usnado o import
+
+ex:
+import java.math;
+
+public class <nome da classe>{
+
+    public static void main(string[], args){
+
+        System.out.print("hello, world!");
+
+    }
+
+}
+
+
+*MANIPULAÇÃO DE DADOS*
+
+saida de dados 
+
+System.out.print("hello world"); imprimi sem pular linha
+System.out.println("hello world"); imprimi pulando linha
+system.out.printf("Numero: %.2f", 234.49); imprimi com formatação
+
+entrada de dados
+é necessario importa um pacote para a entrada de dados, a alguns meio de se fazer a entrada de dados.
+
+1ex:
+usando a biblioteca java.util.scanner
+e criando um objeto para a mesma
+e passar oq ele vai scanear no caso é a entrada de dados(System.in)
+
+import java.util.Scanner;
+
+Scanner <nome_do_objeto_qualquer> = new scanner(System.in);
+
+<tipo_de_dado> <nome_da_variavel> = <obejto>.next<tipo>();
+
+ex:
+ Scanner teclado = new Scanner(System.in);
+    String nome = teclado.nextLine();
+
+
+conversor de tipos
+no java não é permitido trocas de tipos 
+para e encessarios usar um comando
+
+int idade = 50
+
+String valor = idade X
+String valor = (String) idade X
+
+maneira correta usando metodo
+
+String valor = Integer.toString(idade);
+
+
+operadores aritmeticos e a classe Math
++, -, *, /, %
+
+para operações mais complexas ou até utilação de pi, exponeciação e raiz quadrada usamos a classe Math
+
+math.pi = 3.14
+math.pow(5,2) = 25 (exponeciação) 
+math.sqrt(25) = 5 (raiz quadrada)
+math.cbrt(27) = 3 (raiz cubica)
+math.abs(-10) = 10 (valor absoluto)
+math.floor(3.9) = 3 (arredondar para baixo)
+math.ceil(4.2) = 5 (arredondar para cima)
+math.round(5.6) = 6 (arredodamento aritmetico)
+math.random() (gera numeros entre 0.0 e 1.0) para outro basta usar matematica
