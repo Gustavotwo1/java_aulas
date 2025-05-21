@@ -108,3 +108,42 @@ math.floor(3.9) = 3 (arredondar para baixo)
 math.ceil(4.2) = 5 (arredondar para cima)
 math.round(5.6) = 6 (arredodamento aritmetico)
 math.random() (gera numeros entre 0.0 e 1.0) para outro basta usar matematica
+
+
+estrutura condicional
+As estruturas condicionais são usadas para tomar decisões no código, executando diferentes blocos dependendo de uma condição.
+
+ex
+if, else, else if
+
+if (<condição>) {
+    código se a condição for verdadeira
+} else if (<outraCondição>) {
+    código se a outra condição for verdadeira
+} else {
+    código se nenhuma condição for verdadeira
+}
+
+if (<condição1>) {
+    if (<condição2>) {
+        executa se condição1 e condição2 forem verdadeiras
+    } else {
+        executa se condição1 for verdadeira e condição2 for falsa
+    }
+} else {
+    executa se condição1 for falsa
+}
+
+
+switch case 
+
+switch (<variável>) {
+    case valor1:
+        código
+        break;
+    case valor2:
+        código
+        break;
+    default:
+        código se nenhum caso for correspondente
+}
